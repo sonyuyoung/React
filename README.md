@@ -25,3 +25,4 @@ root.render(
 <React.StrictMode>
 {/_ import App from "./App"; 현재폴더에있는 App_/}
 <App />
+# React
