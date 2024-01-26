@@ -4,6 +4,8 @@ import Home from "./Home";
 import Header from "./Header";
 import Inf from "./pages/Inf";
 import State from "./pages/State";
+import Param1 from "./pages/Param1";
+import Param2 from "./pages/Param2";
 //추가적으로 , 헤더를 클릭햇을때 -> home내용이뜨도록 하기위해서 Route/Routes 임포트 추가
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -19,6 +21,9 @@ function App() {
           기존의 home내용이 없어지면서 */}
           <Route path="/info" element={<Inf />} />
           <Route path="/state" element={<State />} />
+          {/* id값의 변수  */}
+          <Route path="/param/:id" element={<Param1 />} />
+          <Route path="/param" element={<Param2 />} />
         </Routes>
       </BrowserRouter>
       <Footer />
